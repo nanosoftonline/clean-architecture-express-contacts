@@ -5,7 +5,7 @@ By employing clean architecture, you can design applications with very low coupl
 ### The Plan
 At a high level, we'd like our API to be structured in the following way
 
-<img src="https://cdn-images-1.medium.com/max/800/1*49cl1bNu2tPAs1UNksleaA.jpeg" target="_blank" />
+[![](https://mermaid.ink/img/pako:eNqVkU1vwjAMhv9K5DMcgMIhh0lbi9AOkxBop2YHqzVQKR9V4hwQ4r8T1LCquy0H6_Xrx7Ls3KBxLYGEs8f-IpQV6S3q0lnGhsXBRSb_M9jLuvSETLkoxST9DlRioMyu6h3xu9a5GKSY5lO6eA08UO9Cx85fP02v04S_dm5Y11_Onl31kYEKGY8u-oZ-e0Yr92zq_e4f-GI-f1uOcpX3SrLI5xhlkeR6lJtBDhFmYMgb7Np05dvTU8AXMqRAJtnSCaNmBcreExr7Np102z6XBXlCHWgGGNkdr7YByT7SC6o6TJ9mMnV_ACr7lZM)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqVkU1vwjAMhv9K5DMcgMIhh0lbi9AOkxBop2YHqzVQKR9V4hwQ4r8T1LCquy0H6_Xrx7Ls3KBxLYGEs8f-IpQV6S3q0lnGhsXBRSb_M9jLuvSETLkoxST9DlRioMyu6h3xu9a5GKSY5lO6eA08UO9Cx85fP02v04S_dm5Y11_Onl31kYEKGY8u-oZ-e0Yr92zq_e4f-GI-f1uOcpX3SrLI5xhlkeR6lJtBDhFmYMgb7Np05dvTU8AXMqRAJtnSCaNmBcreExr7Np102z6XBXlCHWgGGNkdr7YByT7SC6o6TJ9mMnV_ACr7lZM)
 
 
 ### Folder Structure
