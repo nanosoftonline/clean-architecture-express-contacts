@@ -1,10 +1,10 @@
 //test/data/data-source/mongodb/mongodb-contact-data-source.test.ts
 import { MongoDBContactDataSource } from '../../../../src/data/data-sources/mongodb/mongodb-contact-data-source'
-import { DatabaseWrapper } from '../../../../src/data/interfaces/data-sources/database';
+import { NoSQLDatabaseWrapper } from '../../../../src/data/interfaces/data-sources/nosql-database-wrapper';
 
 describe("MongoDB DataSource", () => {
 
-    let mockDatabase: DatabaseWrapper
+    let mockDatabase: NoSQLDatabaseWrapper
 
     beforeAll(async () => {
         mockDatabase = {

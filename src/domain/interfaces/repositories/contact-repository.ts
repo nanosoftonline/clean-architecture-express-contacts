@@ -6,5 +6,5 @@ export interface ContactRepository {
     deleteContact(id: String): void;
     updateContact(id: String, data: ContactRequestModel): void;
     getContacts(): Promise<ContactResponseModel[]>;
-    getContact(id: String): Promise<ContactResponseModel>;
+    getContact(id: String): Promise<ContactResponseModel | null>;
 }

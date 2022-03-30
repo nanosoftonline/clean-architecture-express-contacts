@@ -4,7 +4,7 @@ import { GetAllContacts } from './domain/use-cases/contact/get-all-contacts'
 import { ContactRepositoryImpl } from './domain/repositories/contact-repository'
 import { CreateContact } from './domain/use-cases/contact/create-contact'
 import { MongoClient } from 'mongodb'
-import { DatabaseWrapper } from './data/interfaces/data-sources/database'
+import { NoSQLDatabaseWrapper } from './data/interfaces/data-sources/nosql-database-wrapper'
 import { MongoDBContactDataSource } from './data/data-sources/mongodb/mongodb-contact-data-source'
 
 
@@ -13,7 +13,7 @@ import { MongoDBContactDataSource } from './data/data-sources/mongodb/mongodb-co
     await client.connect()
     const db = client.db("CONTACTS_DB");
 
-    const contactDatabase: DatabaseWrapper = {
+    const contactDatabase: NoSQLDatabaseWrapper = {
         find: (query) => db.collection("contacts").find(query).toArray(),
         insertOne: (doc) => db.collection("contacts").insertOne(doc),
         deleteOne: (id: String) => db.collection("contacts").deleteOne({ _id: id }),

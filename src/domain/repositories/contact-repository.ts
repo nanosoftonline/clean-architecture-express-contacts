@@ -14,8 +14,9 @@ export class ContactRepositoryImpl implements ContactRepository {
     async updateContact(id: String, data: ContactRequestModel) {
         await this.contactDataSource.updateOne(id, data);
     }
-    async getContact(id: String): Promise<ContactResponseModel> {
-        return await this.contactDataSource.getOne(id);
+    async getContact(id: String): Promise<ContactResponseModel | null> {
+        const result = await this.contactDataSource.getOne(id);
+        return result;
     }
 
     async createContact(contact: ContactRequestModel) {

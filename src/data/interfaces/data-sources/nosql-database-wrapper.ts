@@ -1,5 +1,5 @@
 //data/interfaces/data-source/database.ts
-export interface DatabaseWrapper {
+export interface NoSQLDatabaseWrapper {
     find(query: object): Promise<any[]>
     insertOne(doc: any): void
     deleteOne(id: String): void

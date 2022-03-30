@@ -6,5 +6,5 @@ export interface ContactDataSource {
     getAll(): Promise<ContactResponseModel[]>;
     deleteOne(id: String): void;
     updateOne(id: String, data: ContactRequestModel): void;
-    getOne(id: String): Promise<ContactResponseModel>;
+    getOne(id: String): Promise<ContactResponseModel | null>;
 }
