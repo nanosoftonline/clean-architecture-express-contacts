@@ -35,11 +35,11 @@ Let's use files and folders to structure our application. Doing this allows us t
 │   │   └── contact-repository.ts
 │   └── use-cases
 │       └── contact
-│           └── create-contact.ts
+│           ├── create-contact.ts
 │           ├── delete-contact.ts
 │           ├── get-all-contacts.ts
 │           ├── get-one-contacts.ts
-│           ├── update-contact.ts
+│           └── update-contact.ts
 └── data
     ├── interfaces
     │   └── data-sources
