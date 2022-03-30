@@ -1,4 +1,3 @@
-//test/data/data-source/mongodb/mongodb-contact-data-source.test.ts
 import { MongoDBContactDataSource } from '../../../../src/data/data-sources/mongodb/mongodb-contact-data-source'
 import { NoSQLDatabaseWrapper } from '../../../../src/data/interfaces/data-sources/nosql-database-wrapper';
 
