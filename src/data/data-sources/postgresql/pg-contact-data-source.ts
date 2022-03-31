@@ -16,7 +16,7 @@ export class PGContactDataSource implements ContactDataSource {
 
     async getAll(): Promise<ContactResponseModel[]> {
         const dbResponse = await this.db.query(`select * from ${DB_TABLE}`)
-        const result = (dbResponse.rows || []).map(item => ({
+        const result = dbResponse.rows.map(item => ({
             id: item.id,
             name: item.name,
         }));
@@ -33,12 +33,12 @@ export class PGContactDataSource implements ContactDataSource {
 
     async getOne(id: String): Promise<ContactResponseModel | null> {
         const dbResponse = await this.db.query(`select * from ${DB_TABLE} where id = $1 limit 1`, [id])
-        const result = (dbResponse.rows || []).map(item => ({
+        const result = dbResponse.rows.map(item => ({
             id: item.id,
             name: item.name,
         }));
 
-        return result.length > 0 ? result[0] : null;
+        return result[0];
     }
 
 }
